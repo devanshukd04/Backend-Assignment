@@ -25,9 +25,9 @@
 
  > Run the following commands
 
- >> npm i
-
- >> nodemon index.js
+ >> **npm i**
+> >
+ >> **nodemon index.js**
 
 
  # Deployment
