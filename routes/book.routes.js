@@ -7,10 +7,10 @@ router.post('/addBook',createBook);
 
 router.get('/getBooks',getAllBooks);
 
-router.get('/getBook',getBook);
+router.get('/getBook/:id',getBook);
 
-router.patch('/updateBook',updateBook);
+router.patch('/updateBook/:id',updateBook);
 
-router.delete('/deleteBook',deleteBook);
+router.delete('/deleteBook?:id',deleteBook);
 
 export default router;

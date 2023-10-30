@@ -39,7 +39,7 @@ const getAllBooks = async (req, res) => {
 };
 
 const getBook = async (req, res) => {
-  const id = req.query.id;
+  const id = req.params['id'];
 
   try {
     if (!id) {
@@ -63,7 +63,7 @@ const getBook = async (req, res) => {
 };
 
 const deleteBook = async (req, res) => {
-  const { id } = req.body;
+  const id = req.params['id'];
 
   try {
     if (!id) {
@@ -90,7 +90,7 @@ const deleteBook = async (req, res) => {
 };
 
 const updateBook = async (req, res) => {
-  const id = req.query.id;
+  const id = req.params['id'];
   
   const book = req.body;
 
